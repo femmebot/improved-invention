@@ -185,7 +185,7 @@
   }
 
   .different {
-    @apply bg-zinc-100;
+    @apply bg-zinc-50;
     @apply antialiased;
 
   }
@@ -195,7 +195,7 @@
     gap: 24px;
   }
   .card-wrapper .card {
-    @apply flex-col bg-slate-50 border border-slate-200 rounded-md pt-8 pb-16;
+    @apply flex-col bg-white border border-slate-200 rounded-md pt-8 pb-16;
     flex-basis: 33%;
     min-width: 320px;
   }
@@ -226,7 +226,7 @@
   }
 
   .different h2 {
-    @apply text-slate-800;
+    @apply text-zinc-800;
   }
 
   .card-wrapper .card h3 {
@@ -241,7 +241,7 @@
   }
 
   .what-we-label {
-    @apply bg-zinc-100 flex antialiased;
+    @apply bg-zinc-800 flex antialiased;
     /* background-image: linear-gradient(19deg, #21D4FD 10%, #B721FF 100%); */
     gap: 80px;
   }
@@ -257,18 +257,18 @@
   }
 
   .what-we-label h2 {
-    @apply py-0 leading-none text-slate-800;
+    @apply py-0 leading-none text-zinc-200;
     /* @apply border rounded-xl bg-indigo-400; */
     /* @apply text-9xl; */
   }
 
   .what-we-label .subtext {
-    @apply text-2xl py-4 text-zinc-600;
+    @apply text-2xl py-4 text-zinc-400;
     max-width: 360px;
   }
 
   .what-we-label h3 {
-    @apply text-base pt-16 pb-6 text-zinc-800;
+    @apply text-base pt-16 pb-6 text-zinc-200;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   }
 

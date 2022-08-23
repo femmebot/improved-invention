@@ -29,7 +29,7 @@ defineProps({
 
     <div>
 
-      <h3>Supported tasks</h3>
+      <h3>Supported labeling tasks</h3>
       <ul>
         <li>
           Classification
