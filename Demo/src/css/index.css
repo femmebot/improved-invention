@@ -49,71 +49,10 @@
    @apply border border-gray-600 text-black hover:border-black ml-2;
  }
 
-  /* #topnav .nav-links .menu-button.icon-button img {
-    height: 20px;
-    width: 20px;
-  } */
 
   .page-body {
-    /* @apply bg-tertiarygray02 dark:bg-gray95 pb-24; */
-    /* background-image: url('../assets/bg.svg');
-    background-position: -320px 480px; */
 
     padding-bottom: 240px;
-  }
-
-  #sidenav {
-    @apply flex flex-col content-start bg-white dark:bg-gray95 dark:border-r dark:border-gray-700;
-    /* @apply dark:bg-slate760; */
-    width: 200px;
-    min-width: 200px;
-    padding-top: 174px;
-    height: 100%;
-  }
-
-  #sidenav {
-    @apply list-none;
-    @apply px-4;
-    @apply text-xs;
-    /* @apply pb-2; */
-  }
-
-  #sidenav li a
-  /* #sidenav .nav-nested a  */
-  {
-    @apply block rounded-sm;
-    @apply py-2 pl-6;
-    color: var(--gray-60);
-    line-height: 1rem;
-    @apply dark:text-gray-400;
-  }
-
-
- #sidenav li:nth-child(n+3):nth-last-of-type(n+3) a {
-   padding-left: 0;
- }
-
-  #sidenav a svg {
-    @apply w-4 h-4 mr-2 inline-block;
-  }
-
-  #sidenav .nav-caret {
-    @apply w-3 h-3 mr-3 text-gray-300 dark:text-gray-500 stroke-current;
-  }
-
-  #sidenav .sidenav__sublist li a {
-    padding-left: 51px;
-  }
-
-  #sidenav li a:hover,
-  #sidenav .sidenav__sublist a:hover {
-    background-color: var(--tertiary-gray-01);
-    @apply dark:bg-gray90;
-  }
-
-  #sidenav li a.active {
-    background-color: var(--tertiary-gray-02);
-    @apply text-gray-900 dark:bg-zinc-900 dark:text-gray-300;
   }
 
 
@@ -146,53 +85,6 @@
     @apply px-0;
     content: '';
     display: hidden;
-  }
-
-  .blank-slate {
-    @apply bg-white dark:bg-inherit border rounded-md border-slate-300 dark:border-slate-700 p-10 w-full;
-    max-width: 960px;
-    min-width: 640px;
-  }
-
-  .blank-slate .emoticon {
-    /* background-color: var(--orange-10); */
-    font-size: 22px;
-    color: var(--gray-60);
-    border-radius: 40px;
-    @apply flex flex-row justify-center items-center bg-orange10 dark:bg-yellow-800 dark:text-gray-900;
-    @apply h-20 w-20;
-    @apply rounded-full;
-  }
-
-  .blank-slate h2 {
-    @apply antialiased text-2xl font-semibold pt-8 pb-3 dark:text-slate-300;
-    margin: 0;
-    /* padding-top: 24px; */
-    max-width: 640px;
-    /* font-size: 2vw; */
-    line-height: 1.2;
-  }
-
-  .blank-slate p {
-    @apply text-slate-500 dark:text-slate-400 text-sm leading-relaxed;
-    /* line-height: 20px; */
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-    max-width: 480px;
-  }
-
-  .blank-slate .button-primary {
-    @apply rounded-full my-6;
-    @apply bg-greenPrimary hover:bg-greenText;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px 40px;
-    color: white;
-  }
-
-  .primary-button-menu a {
-    @apply px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white;
-    display: block;
   }
 
 
@@ -293,7 +185,7 @@
   }
 
   .different {
-    @apply bg-zinc-200;
+    @apply bg-zinc-900;
     @apply antialiased;
 
   }
@@ -334,11 +226,11 @@
   }
 
   .different h2 {
-    @apply text-zinc-800;
+    @apply text-zinc-300;
   }
 
   .card-wrapper .card h3 {
-    @apply text-slate-800 font-medium rounded-t-2xl px-8 py-8 leading-tight;
+    @apply text-slate-800 font-semibold rounded-t-2xl px-8 py-8 leading-tight;
     font-size: 24px;
     line-height: 28px;
     /* min-height: 148px; */
@@ -349,7 +241,7 @@
   }
 
   .what-we-label {
-    @apply bg-slate-50 flex;
+    @apply bg-zinc-900 flex antialiased;
     /* background-image: linear-gradient(19deg, #21D4FD 10%, #B721FF 100%); */
     gap: 80px;
   }
@@ -365,27 +257,42 @@
   }
 
   .what-we-label h2 {
-    @apply pt-0 px-4 leading-none;
+    @apply py-0 leading-none text-zinc-300;
     /* @apply border rounded-xl bg-indigo-400; */
-    @apply text-9xl;
+    /* @apply text-9xl; */
+  }
+
+  .what-we-label .subtext {
+    @apply text-2xl py-4 text-zinc-500;
+    max-width: 360px;
   }
 
   .what-we-label h3 {
-    @apply text-lg font-semibold py-6;
+    @apply text-base pt-16 pb-6 text-zinc-400;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   }
 
 
   .what-we-label ul {
-    @apply pb-12;
+    @apply p-12 rounded-md;
     @apply flex flex-wrap;
+    @apply bg-zinc-800;
+    @apply text-zinc-400;
     gap: 12px;
+    /* background-color: #191919; */
+
+  }
+
+  .what-we-label ul:last-of-type {
+    @apply bg-zinc-600;
 
   }
 
   .what-we-label li {
-    @apply text-base pt-0 pb-2;
-    @apply border-b border-gray-300;
-    min-width: 240px;
+    @apply text-lg pt-0 pb-2;
+    @apply border-b border-zinc-700 justify-items-stretch;
+    min-width: 200px;
+    width: calc(50% - 12px);
 
   }
 

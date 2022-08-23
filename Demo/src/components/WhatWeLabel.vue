@@ -22,6 +22,9 @@ defineProps({
       <h2>
         What we label
       </h2>
+      <p class="subtext">
+        A flexible platform to support your medical training data needs
+      </p>
     </div>
 
     <div>
