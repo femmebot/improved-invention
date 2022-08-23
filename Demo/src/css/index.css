@@ -4,12 +4,6 @@
 @layer base {
 
   :root {
-    /* --primary-green: #009845;
-    --gray-80: #393939;
-    --gray-50c: #C9CFD6;
-    --orange-10: #FEF3E6;
-    --orange-20: #FCE8CC;
-    --tertiary-gray-60: #565D60; */
     --gray-100: #161616;
     --gray-90: #262626;
     --gray-60: #6F6F6F;
@@ -51,7 +45,6 @@
 
 
   .page-body {
-
     padding-bottom: 240px;
   }
 
@@ -93,7 +86,7 @@
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
     font-size: 128px;
     line-height: 120px;
-    letter-spacing: -.025em;
+    letter-spacing: -.015em;
   }
 
   .hero-section {
@@ -146,7 +139,7 @@
   .different h2,
   .what-we-label h2 {
     @apply text-8xl font-semibold py-12;
-    letter-spacing: -.03em;
+    letter-spacing: -.02em;
   }
 
 
@@ -185,7 +178,7 @@
   }
 
   .different {
-    @apply bg-zinc-50;
+    @apply bg-zinc-100;
     @apply antialiased;
 
   }
@@ -241,7 +234,7 @@
   }
 
   .what-we-label {
-    @apply bg-zinc-800 flex antialiased;
+    @apply bg-zinc-100 flex antialiased;
     /* background-image: linear-gradient(19deg, #21D4FD 10%, #B721FF 100%); */
     gap: 80px;
   }
@@ -257,31 +250,32 @@
   }
 
   .what-we-label h2 {
-    @apply py-0 leading-none text-zinc-200;
+    @apply py-0 leading-none text-zinc-800;
     /* @apply border rounded-xl bg-indigo-400; */
-    /* @apply text-9xl; */
+    @apply text-8xl;
+    letter-spacing: -.02em;
   }
 
   .what-we-label .subtext {
-    @apply text-2xl py-4 text-zinc-400;
+    @apply text-2xl py-4 text-zinc-800;
     max-width: 360px;
   }
 
   .what-we-label h3 {
-    @apply text-base pt-16 pb-8 text-zinc-300;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    @apply text-xl font-semibold pt-16 pb-6 text-black;
+    /* font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; */
   }
 
   .what-we-label h3:first-of-type {
-    /* @apply pt-2; */
+    @apply pt-8;
   }
 
 
   .what-we-label ul {
-    @apply p-12 rounded-md;
+    @apply p-12 rounded-sm;
     @apply flex flex-wrap;
-    @apply bg-zinc-900;
-    @apply text-zinc-300;
+    @apply bg-white;
+    @apply text-zinc-800;
     gap: 12px;
     /* background-color: #191919; */
 
@@ -290,7 +284,7 @@
 
   .what-we-label li {
     @apply text-base pt-0 pb-2;
-    @apply border-b border-zinc-700 justify-items-stretch;
+    @apply border-b border-zinc-200 justify-items-stretch;
     min-width: 200px;
     width: calc(50% - 12px);
 
