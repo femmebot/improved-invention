@@ -7,5 +7,8 @@ npm install vue@next -g
 
 To run locally
 ```
-npm run dev
+cd Demo
+
+npm i && npm run dev
+
 ```
